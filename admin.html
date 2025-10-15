@@ -5,11 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PastelArte - Administrador</title>
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+  <script>
+    function validarAcceso() {
+      const clave = document.getElementById("clave").value;
+      const seccionAdmin = document.getElementById("panelAdmin");
+      const formulario = document.getElementById("loginAdmin");
+      
+      if (clave === "pastel2025") {
+        formulario.style.display = "none";
+        seccionAdmin.style.display = "block";
+      } else {
+        alert("⚠️ Clave incorrecta. Acceso denegado.");
+      }
+    }
+  </script>
+</head>
+
+<body>
   <header>
-    <img src="imagen/LOGO1.png" alt="PastelArte Logo" class="logo">
+    <img src= "imagen/LOGO1.png" alt="PastelArte Logo" class="logo">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="catalogo.html">Catálogo</a>
@@ -19,39 +34,30 @@
   </header>
 
   <section class="admin">
-    <h1>Panel de administración 🧁</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Cliente</th>
-          <th>Producto</th>
-          <th>Dirección</th>
-          <th>Pago</th>
-          <th>Estado</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>María López</td>
-          <td>Torta de Fresa</td>
-          <td>Calle 5 #15-20</td>
-          <td>Nequi</td>
-          <td>En preparación</td>
-        </tr>
-        <tr>
-          <td>Juan Pérez</td>
-          <td>Cupcakes Surtidos</td>
-          <td>Cra 9 #30-22</td>
-          <td>Efectivo</td>
-          <td>Entregado</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+    <h1>Panel del Administrador 🔐</h1>
+    <div id="loginAdmin">
+      <p>Ingrese la clave para acceder al panel de administración.</p>
+      <input type="password" id="clave" placeholder="Contraseña">
+      <button onclick="validarAcceso()" class="btn">Entrar</button>
+    </div>
 
-  <footer>
-    <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
-  </footer>
+    <div id="panelAdmin" style="display: none;">
+      <h2>Bienvenido, Administrador 👩🏻‍💻</h2>
+      <p>Aquí puedes gestionar pedidos, productos y clientes.</p>
 
-</body>
-</html>
+      <div class="panel-opciones">
+        <div class="opcion">
+          <h3>📦 Pedidos Recibidos</h3>
+          <ul>
+            <li>Pedido #001 - Torta de chocolate - $45.000</li>
+            <li>Pedido #002 - Cupcakes surtidos - $30.000</li>
+          </ul>
+        </div>
+
+        <div class="opcion">
+          <h3>🧁 Productos</h3>
+          <button class="btn">Agregar nuevo producto</button>
+          <button class="btn">Editar catálogo</button>
+        </div>
+
+        <div clas
