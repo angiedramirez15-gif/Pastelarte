@@ -1,0 +1,212 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #d3a9a9;
+  color: #5a3e36;
+}
+
+header {
+  background-color: #fcd4e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #5a3e36;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #fcefee;
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  color: #5D4037;
+}
+
+.hero-logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  color: #D81B60;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #D81B60;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #C2185B; /
+}
+
+footer {
+  background-color: #fcd4e0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* ===== CATÁLOGO ===== */
+.catalogo {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.catalogo h1 {
+  color: #D81B60;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.precio {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #d9899b;
+  font-size: 1.2em;
+}
+
+/* ===== PEDIDO ===== */
+.pedido {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.formulario {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.formulario label {
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #5a3e36;
+}
+
+/* --- MEJORA --- (Agrupamos input, select y textarea para no repetir código) */
+.formulario input, .formulario select, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #e6a4b4;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; /* Buena práctica para que el padding no afecte el ancho total */
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.pago {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* ===== ADMIN ===== */
+.admin {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.admin table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin th {
+  background-color: #fcd4e0;
+  padding: 15px;
+  color: #5a3e36;
+}
+
+.admin td {
+  padding: 12px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.admin tr:hover {
+  background-color: #fff0f5;
+}
+
+.nequi-logo {
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
