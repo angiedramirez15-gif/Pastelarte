@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PastelArte - Catálogo</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <header>
-    <img src="imagen/LOGO1.png"PastelArte Logo" class="logo">
+    <img src="imagen/LOGO1.png" alt="PastelArte Logo" class="logo">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="catalogo.html" class="activo">Catálogo</a>
       <a href="pedido.html">Pedidos</a>
       <a href="admin.html">Administrador</a>
-      <a href="login.html">Iniciar sesion</a>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
     </nav>
   </header>
 
@@ -29,23 +32,25 @@
         <h3>Torta de Chocolate</h3>
         <p>Relleno cremoso y decorado artesanal.</p>
         <span class="precio">$45.000</span>
-        <a href="pedido.html" class="btn">Hacer pedido</a>
+        <button onclick="agregarAlCarrito('Torta de Chocolate', 45000)">Agregar al carrito</button>
       </div>
 
       <div class="card">
-        <img width="200" height="200" src="imagen/torta de fresa.png" alt="Torta de Fresa">
+        <img src="imagen/torta de fresa.png" alt="Torta de Fresa">
         <h3>Torta de Fresa</h3>
         <p>Bizcochuelo suave con crema de fresa natural.</p>
         <span class="precio">$40.000</span>
-        <a href="pedido.html" class="btn">Hacer pedido</a>
+        <button onclick="agregarAlCarrito('Torta de Fresa', 40000, 'imagen/torta de fresa.png')">Agregar al
+          carrito</button>
       </div>
 
       <div class="card">
-        <img src="img/torta3.jpg" alt="Cupcakes Surtidos">
+        <img src="imagen/cup cakes.png" alt="Cupcakes Surtidos">
         <h3>Cupcakes Surtidos (6 unidades)</h3>
         <p>Vainilla, chocolate y frutos rojos decorados.</p>
         <span class="precio">$25.000</span>
-        <a href="pedido.html" class="btn">Hacer pedido</a>
+        <button onclick="agregarAlCarrito('Cupcakes Surtidos', 25000,'imagen/torta de chocolate.png')">Agregar al
+          carrito</button>
       </div>
     </div>
   </section>
@@ -54,5 +59,7 @@
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
   </footer>
 
+  <script src="carrito.js"></script>
 </body>
+
 </html>
