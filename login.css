@@ -223,3 +223,60 @@ body{
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* === NUEVO: ESTILO PARA EL FORMULARIO DE REGISTRO === */
+#registroSection {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 10px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+#registroSection input {
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    color: black;
+}
+
+#registroSection button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(33, 182, 219);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#registroSection button:hover {
+    background-color: rgba(33, 182, 219, 0.7);
+    cursor: pointer;
+}
+
+#registroSection a {
+    display: block;
+    text-align: center;
+    color: darkgray;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#registroSection a:hover {
+    color: black;
+}
+
+/* Animación suave al mostrar el formulario */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}

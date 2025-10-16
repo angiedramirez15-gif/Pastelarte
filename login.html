@@ -6,9 +6,66 @@
   <title>Login</title>
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="style.css">
+
+  <script>
+    // Mostrar y ocultar formularios
+    function mostrarRegistro() {
+      document.getElementById("loginSection").style.display = "none";
+      document.getElementById("registroSection").style.display = "block";
+    }
+
+    function mostrarLogin() {
+      document.getElementById("loginSection").style.display = "block";
+      document.getElementById("registroSection").style.display = "none";
+    }
+
+    // Guardar usuario nuevo
+    function registrar() {
+      const usuario = document.getElementById("nuevoUsuario").value;
+      const clave = document.getElementById("nuevaClave").value;
+      const confirmar = document.getElementById("confirmarClave").value;
+
+      if (usuario === "" || clave === "" || confirmar === "") {
+        alert("⚠️ Por favor completa todos los campos.");
+        return;
+      }
+
+      if (clave !== confirmar) {
+        alert("❌ Las contraseñas no coinciden.");
+        return;
+      }
+
+      localStorage.setItem("usuario", usuario);
+      localStorage.setItem("clave", clave);
+      alert("✅ Registro exitoso. Ahora puedes iniciar sesión.");
+      mostrarLogin();
+    }
+
+    // Iniciar sesión
+    function iniciarSesion() {
+      const usuario = document.getElementById("usuario").value;
+      const clave = document.getElementById("clave").value;
+      const guardadoUsuario = localStorage.getItem("usuario");
+      const guardadoClave = localStorage.getItem("clave");
+
+      // Administrador
+      if (usuario === "admin" && clave === "1234") {
+        alert("🔐 Bienvenido Administrador de PastelArte!");
+        window.location.href = "admin.html";
+        return;
+      }
+
+      // Cliente
+      if (usuario === guardadoUsuario && clave === guardadoClave) {
+        alert("🎂 Bienvenido " + usuario + " a PastelArte!");
+        window.location.href = "index.html";
+      } else {
+        alert("❌ Usuario o contraseña incorrectos.");
+      }
+    }
+  </script>
 </head>
 <body>
-
   <header>
     <img src="imagen/LOGO1.png" alt="PastelArte Logo" class="logo">
     <nav>
@@ -16,44 +73,65 @@
       <a href="catalogo.html">Catálogo</a>
       <a href="pedido.html">Pedidos</a>
       <a href="admin.html">Administrador</a>
-      <a href="login.html">Iniciar sesion</a>
+      <a href="login.html">Iniciar sesión</a>
     </nav>
   </header> 
  
-    <div class="container">
-        <div class="container-lg">
-            <div class="login">
-                <img src="imagen/Jaider.jpeg" alt="" class="Jaider">
-                <h2 class="title">Ingresa tu Usuario y Contraseña</h2>
-                <form action="">
-                    <h2>Ingresa tu Usuario:</h2>
-                    <input type="text" placeholder="Usuario">
+  <div class="container">
+    <div class="container-lg">
 
-                    <h2>Ingresa tu Contraseña:</h2>
-                    <input type="password" placeholder="Contraseña">
+      <!-- SECCIÓN LOGIN ORIGINAL -->
+      <div id="loginSection" class="login">
+        <img src="imagen/Jaider.jpeg" alt="" class="Jaider">
+        <h2 class="title">Ingresa tu Usuario y Contraseña</h2>
+        <form onsubmit="event.preventDefault(); iniciarSesion();">
+          <h2>Ingresa tu Usuario:</h2>
+          <input type="text" id="usuario" placeholder="Usuario">
 
-                    <button class="access"><a href="index.html">Acceder</a></button>
-                    <a href="#">¿Olvidaste tu Contraseña?</a>
-                    <a href="registro.html">Registrate</a>
-                </form>
-            </div>
-            <div class="login-nt">
-                <img src="imagen/Dany.jpeg" alt="" class="Dany">
-                <h2 class="title">Inicia Sesión con tus Redes</h2>
-                <div class="icons">
-                    <button class="mail"><i class="fas fa-envelope"></i>Acceder con Email</button>
-                    <button class="fb"><i class="fab fa-facebook-f"></i>Acceder con Facebook</button>
-                    <button class="tw"><i class="fab fa-twitter"></i>Acceder con Twitter</button>
-                    <button class="ig"><i class="fab fa-instagram"></i>Acceder con Instagram</button>
-                </div>
-            </div>
+          <h2>Ingresa tu Contraseña:</h2>
+          <input type="password" id="clave" placeholder="Contraseña">
+
+          <button type="submit" class="access">Acceder</button><br>
+          <a href="#">¿Olvidaste tu Contraseña?</a><br>
+          <a href="#" onclick="mostrarRegistro()">Registrate</a>
+        </form>
+      </div>
+
+      <!-- SECCIÓN REGISTRO (OCULTA POR DEFECTO) -->
+      <div id="registroSection" class="login" style="display:none;">
+        <h2 class="title">Crear cuenta nueva</h2>
+        <form onsubmit="event.preventDefault(); registrar();">
+          <h2>Usuario:</h2>
+          <input type="text" id="nuevoUsuario" placeholder="Nuevo usuario">
+
+          <h2>Contraseña:</h2>
+          <input type="password" id="nuevaClave" placeholder="Contraseña">
+
+          <h2>Confirmar contraseña:</h2>
+          <input type="password" id="confirmarClave" placeholder="Confirmar contraseña">
+
+          <button type="submit" class="access">Registrar</button><br>
+          <a href="#" onclick="mostrarLogin()">Volver al inicio de sesión</a>
+        </form>
+      </div>
+
+      <div class="login-nt">
+        <img src="imagen/Dany.jpeg" alt="" class="Dany">
+        <h2 class="title">Inicia Sesión con tus Redes</h2>
+        <div class="icons">
+          <button class="mail"><i class="fas fa-envelope"></i>Acceder con Email</button>
+          <button class="fb"><i class="fab fa-facebook-f"></i>Acceder con Facebook</button>
+          <button class="tw"><i class="fab fa-twitter"></i>Acceder con Twitter</button>
+          <button class="ig"><i class="fab fa-instagram"></i>Acceder con Instagram</button>
         </div>
+      </div>
+
     </div>
-  </section>
+  </div>
 
   <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
   </footer>
-
 </body>
 </html>
+
