@@ -1,4 +1,4 @@
-// === Función para agregar productos al carrito ===
+
 function agregarAlCarrito(nombre, precio, imagen) {
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   carrito.push({ nombre, precio, imagen });
@@ -6,15 +6,16 @@ function agregarAlCarrito(nombre, precio, imagen) {
   alert(`${nombre} ha sido agregado al carrito 🛒`);
 }
 
-// === Mostrar productos en carrito.html ===
+
 document.addEventListener("DOMContentLoaded", () => {
   const contenedor = document.getElementById("carrito-contenido");
   if (contenedor) {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     if (carrito.length === 0) {
-      contenedor.innerHTML = "<p>Tu carrito está vacío 😢</p>";
-    } else {
+  contenedor.innerHTML = '<p class="carrito-vacio">Tu carrito está vacío 😢</p>';
+}
+ else {
       let total = 0;
       contenedor.innerHTML = `
         <div class="lista-carrito">
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Vaciar carrito
+
   const btnVaciar = document.getElementById("vaciarCarrito");
   if (btnVaciar) {
     btnVaciar.addEventListener("click", () => {

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PastelArte - Administrador</title>
   <link rel="stylesheet" href="style.css">
-
   <script>
     function validarAcceso() {
       const clave = document.getElementById("clave").value;
@@ -24,7 +23,6 @@
 
 <body>
   <header>
-    <img src= "imagen/LOGO1.png" alt="PastelArte Logo" class="logo">
     <nav>
       <a href="index.html">Inicio</a>
       <a href="catalogo.html">Catálogo</a>
@@ -34,30 +32,42 @@
   </header>
 
   <section class="admin">
-    <h1>Panel del Administrador 🔐</h1>
+    
+
     <div id="loginAdmin">
       <p>Ingrese la clave para acceder al panel de administración.</p>
       <input type="password" id="clave" placeholder="Contraseña">
-      <button onclick="validarAcceso()" class="btn">Entrar</button>
+      <button onclick="validarAcceso()" class="btn entrar">Entrar</button>
     </div>
 
     <div id="panelAdmin" style="display: none;">
-      <h2>Bienvenido, Administrador 👩🏻‍💻</h2>
+      <h1>Bienvenido, Administrador 👩🏻‍💻</h1>
       <p>Aquí puedes gestionar pedidos, productos y clientes.</p>
 
       <div class="panel-opciones">
-        <div class="opcion">
-          <h3>📦 Pedidos Recibidos</h3>
-          <ul>
-            <li>Pedido #001 - Torta de chocolate - $45.000</li>
-            <li>Pedido #002 - Cupcakes surtidos - $30.000</li>
-          </ul>
-        </div>
 
-        <div class="opcion">
-          <h3>🧁 Productos</h3>
-          <button class="btn">Agregar nuevo producto</button>
-          <button class="btn">Editar catálogo</button>
-        </div>
+  <div class="opcion">
+    <h3>📦 Pedidos Recibidos</h3>
+    <ul>
+      <li>
+        <img src="imagen/Torta de chocolate.jpg" alt="Torta de chocolate" class="img-pedido">
+        Pedido #001 -Torta de chocolate - $45.000
+      </li>
+      <li>
+        <img src="imagen/cup cakes.png" alt="Cupcakes surtidos" class="img-pedido">
+        Pedido #002 -Cupcakes surtidos - $30.000
+      </li>
+    </ul>
+  </div>
 
-        <div clas
+  <div class="opcion">
+    <h3>🧁 Productos</h3>
+    <button class="btn">Agregar nuevo producto</button>
+    <button class="btn">Editar catálogo</button>
+  </div>
+
+</div>
+
+  </section>
+</body>
+</html>
