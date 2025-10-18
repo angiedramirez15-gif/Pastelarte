@@ -224,7 +224,6 @@ body{
     text-decoration: underline;
 }
 
-/* === NUEVO: ESTILO PARA EL FORMULARIO DE REGISTRO === */
 #registroSection {
     width: 400px;
     height: 500px;
@@ -275,7 +274,7 @@ body{
     color: black;
 }
 
-/* Animación suave al mostrar el formulario */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
