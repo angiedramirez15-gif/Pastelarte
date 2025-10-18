@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 
   <script>
-    // Mostrar y ocultar formularios
+ 
     function mostrarRegistro() {
       document.getElementById("loginSection").style.display = "none";
       document.getElementById("registroSection").style.display = "block";
@@ -19,7 +19,6 @@
       document.getElementById("registroSection").style.display = "none";
     }
 
-    // Guardar usuario nuevo
     function registrar() {
       const usuario = document.getElementById("nuevoUsuario").value;
       const clave = document.getElementById("nuevaClave").value;
@@ -41,21 +40,20 @@
       mostrarLogin();
     }
 
-    // Iniciar sesión
+  
     function iniciarSesion() {
       const usuario = document.getElementById("usuario").value;
       const clave = document.getElementById("clave").value;
       const guardadoUsuario = localStorage.getItem("usuario");
       const guardadoClave = localStorage.getItem("clave");
 
-      // Administrador
+     
       if (usuario === "admin" && clave === "1234") {
         alert("🔐 Bienvenido Administrador de PastelArte!");
         window.location.href = "admin.html";
         return;
       }
 
-      // Cliente
       if (usuario === guardadoUsuario && clave === guardadoClave) {
         alert("🎂 Bienvenido " + usuario + " a PastelArte!");
         window.location.href = "index.html";
@@ -80,7 +78,7 @@
   <div class="container">
     <div class="container-lg">
 
-      <!-- SECCIÓN LOGIN ORIGINAL -->
+
       <div id="loginSection" class="login">
         <img src="imagen/Jaider.jpeg" alt="" class="Jaider">
         <h2 class="title">Ingresa tu Usuario y Contraseña</h2>
@@ -97,7 +95,6 @@
         </form>
       </div>
 
-      <!-- SECCIÓN REGISTRO (OCULTA POR DEFECTO) -->
       <div id="registroSection" class="login" style="display:none;">
         <h2 class="title">Crear cuenta nueva</h2>
         <form onsubmit="event.preventDefault(); registrar();">
