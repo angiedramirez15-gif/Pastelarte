@@ -88,18 +88,3 @@
 .formulario button:hover {
   background-color: #c2185b;
 }
-.btn-pagar {
-  display: inline-block;
-  margin-top: 15px;
-  background-color: #D81B60;
-  padding: 10px 20px;
-  color: #fff;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn-pagar:hover {
-  background-color: #c2185b;
-}
