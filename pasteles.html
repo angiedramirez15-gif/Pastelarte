@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PastelArte-pasteles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogo.css">
+    
+</head>
+<body>
+<header>
+   
+
+    <nav>
+        <a href="index.html">Inicio</a>
+
+        <div class="submenu">
+            <a href="#" class="activo">Catálogo ▾</a>
+            <div class="submenu-items">
+                
+                <a href="cupcakes.html">Cupcakes</a>
+                <a href="postres.html">Postres</a>
+            </div>
+        </div>
+
+        <a href="pedidos.html">Pedidos</a>
+        <a href="admin.html">Administrador</a>
+        <a href="login.html">Iniciar sesión</a>
+
+        <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+    </nav>
+ </header>
+    <section class="catalogo">
+    <h1>Nuestros Pasteles</h1>
+    <p>Elige tu favorito y haz tu pedido en línea 💕</p>
+
+    <div class="productos">
+      <div class="card">
+        <img src="imagen/chocolate-cake.webp" alt="Torta de Chocolate">
+        <h3>Torta de Chocolate</h3>
+        <p>Relleno cremoso y decorado artesanal.</p>
+        <span class="precio">$45.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Chocolate', 45000, 'imagen/Torta de chocolate.jpg')">Agregar al carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="imagen/torta de fresa.png" alt="Torta de Fresa">
+        <h3>Torta de Fresa</h3>
+        <p>Bizcochuelo suave con crema de fresa natural.</p>
+        <span class="precio">$40.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Fresa', 40000, 'imagen/torta de fresa.png')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="imagen/cup cakes.png" alt="Cupcakes Surtidos">
+        <h3>Cupcakes Surtidos (6 unidades)</h3>
+        <p>Vainilla, chocolate y frutos rojos decorados.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Cupcakes Surtidos', 25000,'imagen/cup cakes.png')">Agregar al
+          carrito</button>
+      </div>
+    </div>
+  </section>
+   <footer>
+    <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
+  </footer>
+
+  <script src="carrito.js"></script>
+</body>
+
+</html>
+    
+</body>
+</html>
