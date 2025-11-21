@@ -2,9 +2,13 @@
   text-align: center;
   padding: 60px 20px;
    background-color: #fcefee; 
-  
+ 
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .catalogo h1 {
   color: #000000;
@@ -15,9 +19,10 @@
 .productos {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+ 
   gap: 30px;
   margin-top: 40px;
+
 }
 
 .card {

@@ -22,7 +22,7 @@ header {
 
 .logo {
   height: 50px;
-  ;
+  
 }
 
 
@@ -34,6 +34,7 @@ nav a {
   font-weight: bold;
   
 }
+
 
 .hero {
   background-color: #fee9e7;
@@ -53,7 +54,6 @@ nav a {
   color: #e7709c;
   font-size: 2.5em;
   margin: 0;  
-  : ;
   transform: translateX(-50%);
 }
 
@@ -82,8 +82,8 @@ nav a {
   border-radius: 25px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  transform: translateX(-10%)
-  translateY(30%); 
+  transform: translateX(-10%);
+ 
 
 }
 
@@ -103,15 +103,20 @@ nav a {
   font-size: 2em;
   margin-bottom: 50px;
 }
-
 .destacados .productos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
+a {
+  text-decoration: none;
+  
+}
 
 .destacados .producto {
+ 
+ justify-content: center;
   background: #fcefee;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -161,7 +166,7 @@ nav a {
 }
 
 .sobre p {
-  text-align: left
+  text-align: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -212,15 +217,3 @@ header .activo {
 }
 
 
-.ver-carrito {
-  background-color: #D81B60;
-  color: white !important;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 0.9em;
-  transition: background-color 0.3s ease;
-}
-
-.ver-carrito:hover {
-  background-color: #c2185b;
-}

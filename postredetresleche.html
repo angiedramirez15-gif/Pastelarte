@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PastelArte-pasteles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalogo.css">
+    
+</head>
+<body>
+<header>
+   
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="activo">Catálogo </a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="admin.html">Administrador</a>
+        <a href="login.html">Iniciar sesión</a>
+
+        <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+    </nav>
+ </header>
+    <section class="catalogo">
+    <h1>POSTRES DE TRES LECHE</h1>
+    <p> Cada bocado sabe amor</p>
+
+    <div class="tresleche">
+      <div class="card">
+        <img src="imagen/Torta de chocolate.jpg" alt="Torta de Chocolate">
+        <h3>Torta de Chocolate</h3>
+        <p>Relleno cremoso y decorado artesanal.</p>
+        <span class="precio">$45.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Chocolate', 45000, 'imagen/Torta de chocolate.jpg')">Agregar al carrito</button>
+
+
+    </div>
+  </section>
+  
+    <script src="carrito.js"></script>
+    
+</body>
+</html>
