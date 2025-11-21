@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="pasteles.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="carrito.css">
     
 </head>
 <body>
@@ -14,13 +15,16 @@
    
 
     <nav>
+      <div class="logo">🍰 PastelArte</div>
+      <div class="links">
         <a href="index.html">Inicio</a>
-        <a href="#" class="activo">Catálogo </a>
+        <a href="catalogo.html" class="activo">Catálogo </a>
         <a href="pedidos.html">Pedidos</a>
         <a href="admin.html">Administrador</a>
-        <a href="login.html">Iniciar sesión</a>
-
         <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+
+        </div>
     </nav>
  </header>
     <section class="catalogo">
@@ -29,32 +33,60 @@
 
     <div class="productos">
       <div class="card">
-        <img src="imagen/Torta de chocolate.jpg" alt="Torta de Chocolate">
-        <h3>Torta de Chocolate</h3>
-        <p>Relleno cremoso y decorado artesanal.</p>
+        <img src="/imagen/Postres/PIONONO.jpg" alt="Piono">
+        <h3>Piono</h3>
+        <p>Delicado pionono relleno con crema y sabor equilibrado.</p>
         <span class="precio">$45.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Chocolate', 45000, 'imagen/Torta de chocolate.jpg')">Agregar al carrito</button>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Piono', 45000, '/imagen/Postres/PIONONO.jpg')">Agregar al carrito</button>
       </div>
 
       <div class="card">
-        <img src="imagen/torta de fresa.png" alt="Torta de Fresa">
-        <h3>Torta de Fresa</h3>
-        <p>Bizcochuelo suave con crema de fresa natural.</p>
+        <img src="/imagen/Postres/3-LECHES-GENOVESA.jpg" alt="Genovesa">
+        <h3>Leches Genovesa</h3>
+        <p>Genovesa clásica, esponjosa, con capas de crema.</p>
         <span class="precio">$40.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Fresa', 40000, 'imagen/torta de fresa.png')">Agregar al
+        <button class="btn-carrito" onclick="agregarAlCarrito('Leches Genovesa', 40000, '/imagen/Postres/3-LECHES-GENOVESA.jpg')">Agregar al
           carrito</button>
       </div>
 
       <div class="card">
-        <img src="imagen/cup cakes.png" alt="Cupcakes Surtidos">
-        <h3>Cupcakes Surtidos (6 unidades)</h3>
-        <p>Vainilla, chocolate y frutos rojos decorados.</p>
+        <img src="/imagen/Postres/MANJAR-ESAPANOL.jpg" alt="Manjar Español">
+        <h3>Manjar Español</h3>
+        <p>Manjar preparado con receta tradicional y cobertura suave.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Cupcakes Surtidos', 25000,'imagen/cup cakes.png')">Agregar al
+        <button class="btn-carrito" onclick="agregarAlCarrito('Manjar Español', 25000,'/imagen/Postres/MANJAR-ESAPANOL.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Postres/NAPOLEON.jpg" alt="Napoleon">
+        <h3>Napoleon</h3>
+        <p>Napoleón crocante con crema pastelera fina.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Napoleon', 25000,'/imagen/Postres/NAPOLEON.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Postres/SELVA-NEGRA_.jpg" alt="Selva Negra">
+        <h3>Selva Negra</h3>
+        <p>Selva Negra con trozos de cereza y chocolate rallado.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Selva Negra', 25000,'/imagen/Postres/SELVA-NEGRA_.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Postres/TRUFAS.jpg" alt="Trufas">
+        <h3>Trufa de Chocolate</h3>
+        <p>Trufa intensa con ganache y detalles dorados.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Trufa de Chocolate', 25000,'/imagen/Postres/TRUFAS.jpg')">Agregar al
           carrito</button>
       </div>
       
     </div>
+    <a href="catalogo.html" class="btn-volver">Volver catalogo</a>
   </section>
      <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
