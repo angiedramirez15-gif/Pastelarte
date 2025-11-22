@@ -35,7 +35,6 @@ a {
   width: 280px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
 .card:hover {

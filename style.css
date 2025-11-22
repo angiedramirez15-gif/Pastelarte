@@ -62,7 +62,7 @@ nav .links a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
+  padding: 80px 15%;
   position: relative;
 }
 
@@ -108,11 +108,10 @@ nav .links a:hover {
 
 .hero-bg {
   position: absolute;
-  width: 600px;
+  width: 1900px;
   height: 600px;
   background: radial-gradient(circle, #ffd9e6 10%, transparent 70%);
   top: -150px;
-  right: -150px;
   z-index: -1;
 }
 
@@ -157,7 +156,7 @@ nav .links a:hover {
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.1);
 }
 
 .card img {
