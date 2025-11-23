@@ -1,4 +1,8 @@
 /* RESET */
+html {
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -46,8 +50,16 @@ nav .links a {
   transition: 0.3s;
 }
 
+nav .links a, nav a{
+  display: inline-block;
+  }
+
 nav .links a:hover {
   color: #e75b8d;
+}
+
+.links a:hover{
+  transform: scale(1.1);
 }
 
 .btn-login {

@@ -37,10 +37,6 @@ a {
   text-align: center;
 }
 
-.card:hover {
-  transform: scale(1.1);
-}
-
 .card img {
   width: 100%;
   border-radius: 12px;
