@@ -17,11 +17,14 @@ a {
 }
 
 .productos {
-  display: flex;
-  justify-content: center;
- 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 3 columnas fijas */
   gap: 30px;
-  margin-top: 40px;
+  padding: 20px;
+  justify-items: center;
+  max-width: 900px;
+  margin: auto;
+  
 
 }
 
@@ -32,11 +35,10 @@ a {
   width: 280px;
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 
 .card img {

@@ -9,65 +9,107 @@
 
 <body>
 
-  <header>
-     
+  <!-- NAV -->
+  <header class="header">
     <nav>
-      <a href="index.html" class="activo">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
-      <a href="pedido.html">Pedidos</a>
-      <a href="admin.html">Administrador</a>
-      <a href="login.html">Iniciar sesion</a>
+      <div class="logo">🍰 PastelArte</div>
+      <div class="links">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="pedido.html">Pedidos</a>
+        <a href="personalizar.html">Personalizar</a>
+        <a href="sobre.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="admin.html">Administrador</a>
+        <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+      </div>
     </nav>
   </header>
 
+  <!-- HERO PRINCIPAL -->
   <section class="hero">
-    <div class="hero">
+    <div class="hero-text">
+      <h1>Exquisitos Postres <span>Hechos con Arte</span></h1>
+      <p>Sabores únicos, diseños elegantes y una experiencia dulce inolvidable.  
+      Descubre creaciones hechas con dedicación y pasión.</p>
+      <a href="catalogo.html" class="btn-primary">Explorar catálogo</a>
+    </div>
 
-  <h1 class="hero-title">Bienvenido a </h1>
-  <p>Donde cada postre es una obra de arte hecha con amor y sabor.</p>
-  <a href="catalogo.html" class="btn">Ver Catálogo</a>
-</div>
+    <div class="hero-img">
+      <img src="imagen/LOGO1.png" alt="PastelArte">
+    </div>
+
+    <div class="hero-bg"></div>
   </section>
 
- 
+  <!-- DESTACADOS -->
   <section class="destacados">
-  <h2>✨Nuestros favoritos ✨</h2>
+    <h2>Nuestros productos destacados</h2>
+    <p class="sub">Una selección especial de nuestras delicias más populares</p>
 
-  <div class="productos">
+    <div class="cards">
 
-    <div class="producto">
-      <a href="postredetresleche.html" class="item-catalogo">
-      <img src="imagen/postrestresleche.png" alt="Postres Tres leche">
-      <h3>Postres Tres leche</h3>
-      <p>Suave bizcocho con relleno cremoso y cobertura intensa.</p>
+      <div class="card">
+        <img src="/imagen/Adicionales/EMPACADO-TRADICIONAL.jpg" alt="Postres Tres Leche">
+        <h3>Postres Tres Leche</h3>
+        <p>Suave, cremoso y perfecto para cualquier ocasión.</p>
+        <a href="adicionales.html" class="btn-secondary">Lo quiero</a>
+      </div>
+
+      <div class="card">
+        <img src="imagen/torta de fresa.png" alt="Torta de Fresa">
+        <h3>Torta de Fresa</h3>
+        <p>Bizcocho aireado con crema y fresas naturales.</p>
+        <a href="pasteles.html" class="btn-secondary">Lo quiero</a>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/CeroAzucar/Cero-Azucar-Vainilla-con-Coco.jpg" alt="Vainilla Coco">
+        <h3>Vainilla Coco</h3>
+        <p>Esponjoso bizcocho de vainilla con toque tropical de coco.</p>
+        <a href="ceroazucar.html" class="btn-secondary">Lo quiero</a>
+      </div>
+
     </div>
-    </a>
-
-    <div class="producto">
-         <a href="tortadefresa.html" class="item-catalogo">
-      <img src="imagen/torta de fresa.png" alt="Torta de fresa">
-      <h3>Torta de Fresa</h3>
-      <p>Consiste en un bizcocho bañado con tres tipos de lácteo.</p>
-    </div> 
-      </a>
-
-    <div class="producto">
-      <img src="imagen/cup cakes.png" alt="Cupcakes surtidos">
-      <h3>Cupcakes surtidos</h3>
-      <p>Coloridos y perfectos para compartir.</p>
-    </div>
-
-  </div>
-</section>
-
-  <section class="sobre">
-    <h2>Sobre nosotros→</h2>
-    <p>En <strong>PastelArte</strong> creemos que cada celebración merece algo único. Elaboramos postres personalizados, con ingredientes frescos y diseños que reflejan tus ideas y emociones.
-    </p>
-   
   </section>
 
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="why">
+    <h2>¿Por qué elegir PastelArte?</h2>
 
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>Ingredientes Premium</h3>
+        <p>Seleccionamos los mejores insumos para garantizar sabores superiores.</p>
+      </div>
+      <div class="why-item">
+        <h3>Diseños Exclusivos</h3>
+        <p>Pasteles únicos con acabados profesionales hechos a mano.</p>
+      </div>
+      <div class="why-item">
+        <h3>Personalización Total</h3>
+        <p>Tu pastel, tu estilo. Creamos lo que imaginas.</p>
+      </div>
+      <div class="why-item">
+        <h3>Entrega Segura</h3>
+        <p>Empaque especializado para que llegue perfecto a tu mesa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="sobre">
+    <div class="sobre-content">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En <strong>PastelArte</strong>, combinamos creatividad, pasión y técnica profesional para crear
+        postres que no solo se ven increíbles, sino que también deleitan a cada bocado.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
     <p>© 2025 PastelArte - Todos los derechos reservados</p>
@@ -75,3 +117,4 @@
 
 </body>
 </html>
+

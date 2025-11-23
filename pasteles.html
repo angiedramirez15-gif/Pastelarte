@@ -6,20 +6,24 @@
     <title>PastelArte-pasteles</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="carrito.css">
     
 </head>
 <body>
-<header>
+<header class="header">
    
 
     <nav>
+      <div class="logo">🍰 PastelArte</div>
+      <div class="links">
         <a href="index.html">Inicio</a>
         <a href="catalogo.html" class="activo">Catálogo </a>      
         <a href="pedidos.html">Pedidos</a>
         <a href="admin.html">Administrador</a>
-        <a href="login.html">Iniciar sesión</a>
-
         <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+        <a href="login.html" class="btn-login">Iniciar sesión</a>
+
+        </div>
     </nav>
  </header>
     <section class="catalogo">
@@ -28,31 +32,59 @@
 
     <div class="productos">
       <div class="card">
-        <img src="imagen/chocolate-cake.webp" alt="Torta de Chocolate">
-        <h3>Torta de Chocolate</h3>
-        <p>Relleno cremoso y decorado artesanal.</p>
+        <img src="/imagen/Pasteles/VAINILLA-DAMA.jpg" alt="Vainilla Dama">
+        <h3>Vainilla Dama</h3>
+        <p>Suave bizcocho con aroma dulce y textura esponjosa.</p>
         <span class="precio">$45.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Chocolate', 45000, 'imagen/Torta de chocolate.jpg')">Agregar al carrito</button>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Vainilla Dama', 45000, '/imagen/Pasteles/VAINILLA-DAMA.jpg')">Agregar al carrito</button>
       </div>
 
       <div class="card">
         <img src="imagen/torta de fresa.png" alt="Torta de Fresa">
         <h3>Torta de Fresa</h3>
         <p>Bizcochuelo suave con crema de fresa natural.</p>
-        <span class="precio">$40.000</span>
+        <span class="precio">COP $40.000</span>
         <button class="btn-carrito" onclick="agregarAlCarrito('Torta de Fresa', 40000, 'imagen/torta de fresa.png')">Agregar al
           carrito</button>
       </div>
 
       <div class="card">
-        <img src="imagen/cup cakes.png" alt="Cupcakes Surtidos">
-        <h3>Cupcakes Surtidos (6 unidades)</h3>
-        <p>Vainilla, chocolate y frutos rojos decorados.</p>
+        <img src="/imagen/Pasteles/VAINILLA-CON-AREQUIPE.jpg" alt="VAINILLA CON AREQUIPE">
+        <h3>Vainilla con Arequipe</h3>
+        <p>Esponjoso pastel de vainilla con relleno cremoso de arequipe.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Cupcakes Surtidos', 25000,'imagen/cup cakes.png')">Agregar al
+        <button class="btn-carrito" onclick="agregarAlCarrito('Vainilla con Arequipe', 25000,'/imagen/Pasteles/VAINILLA-CON-AREQUIPE.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Pasteles/Combinado.jpg" alt="Combinado">
+        <h3>Combinado</h3>
+        <p>Mitad vainilla, mitad chocolate: sabor perfecto y equilibrado.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Combinado', 25000,'/imagen/Pasteles/Combinado.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Pasteles/CHOCOMANI.jpg" alt="Chocomani">
+        <h3>Chocomani</h3>
+        <p>Chocolate intenso con toque crocante de maní.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Chocomani', 25000,'/imagen/Pasteles/CHOCOMANI.jpg')">Agregar al
+          carrito</button>
+      </div>
+
+      <div class="card">
+        <img src="/imagen/Pasteles/CHOCOLATE.jpg" alt="Chocolate">
+        <h3>Chocolate</h3>
+        <p>Bizcochuelo húmedo y rico en cacao puro.</p>
+        <span class="precio">$25.000</span>
+        <button class="btn-carrito" onclick="agregarAlCarrito('Chocolate', 25000,'/imagen/Pasteles/CHOCOLATE.jpg')">Agregar al
           carrito</button>
       </div>
     </div>
+    <a href="catalogo.html" class="btn-volver">Volver catalogo</a>
   </section>
    <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>

@@ -6,7 +6,7 @@
 
 body{
     height: 100%;
-    background-color: rgba(129, 21, 21, 0.472);
+    background-color: rgba(148, 33, 33, 0.472);
 }
 
 .container{
@@ -21,24 +21,25 @@ body{
     display: flex;
     width: 700px;
     height: auto;
-    background-color: transparent;
+   
 }
 
 .login{
     width: 400px;
     height: 500px;
-    background-color: white;
+     background: radial-gradient(circle, #ffd9e6 10%, transparent 70%);
+    top: -150px;
     color: black;
     box-sizing: border-box;
     padding: 30px 40px;
-    border-radius: 10px;
+    border: solid 1px pink;
     animation-name: border;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes border{
+/*@keyframes border{
     0%{
         border-radius: 0%;
     }
@@ -46,7 +47,7 @@ body{
         border-top-left-radius: 20%;
         border-bottom-left-radius: 20%;
     }
-}
+}*/
 
 .Jaider{
     position: absolute;
@@ -90,7 +91,7 @@ body{
     margin: 10px 0;
     border: none;
     outline: none;
-    color: black;
+    color:  black;
     background-color: rgb(33, 182, 219);
     font-size: 16px;
     border-radius: 25px;
@@ -122,18 +123,19 @@ body{
 .login-nt{
     width: 400px;
     height: 500px;
-    color: white;
-    background-color: black;
+    color: rgb(7, 7, 7);
+    background: radial-gradient(circle, #ffd9e6 10%, transparent 70%);
+    top: -150px;
     box-sizing: border-box;
     padding: 30px 40px;
-    border-radius: 10px;
+    border: solid 1px pink;
     animation-name: border2;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes border2{
+/*@keyframes border2{
     0%{
         border-radius: 0%;
     }
@@ -141,7 +143,7 @@ body{
         border-top-right-radius: 20%;
         border-bottom-right-radius: 20%;
     }
-}
+}*/
 
 .Dany{
     position: absolute;
