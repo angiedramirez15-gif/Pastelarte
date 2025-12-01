@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PastelArte-pasteles</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="catalogo.css">
-    <link rel="stylesheet" href="carrito.css">
-    
-</head>
-<body>
-<header class="header">
-   
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PastelArte-pasteles</title>
+  <link rel="stylesheet" href="/ccs/style.css">
+  <link rel="stylesheet" href="/ccs/catalogo.css">
+  <link rel="stylesheet" href="/ccs/carrito.css">
+
+</head>
+
+<body>
+  <header class="header">
     <nav>
-      <div class="logo">🍰 PastelArte</div>
+      <div class="logo">PastelArte</div>
       <div class="links">
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html" class="activo">Catálogo </a>      
-        <a href="pedidos.html">Pedidos</a>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizar.html">Personalizar</a>
+        <a href="sobre.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
         <a href="admin.html">Administrador</a>
         <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
-        <a href="login.html" class="btn-login">Iniciar sesión</a>
-
-        </div>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html" class="btn-login">Acceder</a>
+      </div>
     </nav>
- </header>
-    <section class="catalogo">
+  </header>
+  <section class="catalogo">
     <h1>Adicionales</h1>
     <p>Elige tu favorito y haz tu pedido en línea 💕</p>
 
@@ -36,7 +38,9 @@
         <h3>Tres Leches Arequipe</h3>
         <p>Bizcochuelo húmedo con mezcla de leches y suave toque de arequipe.</p>
         <span class="precio">$45.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Tres Leches Arequipe', 45000, '/imagen/Adicionales/EMPACADO-ARQUIPE.jpg')">Agregar al carrito</button>
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Tres Leches Arequipe', 45000, '/imagen/Adicionales/EMPACADO-ARQUIPE.jpg')">Agregar
+          al carrito</button>
       </div>
 
       <div class="card">
@@ -44,7 +48,9 @@
         <h3>Tres Leches Chocolate</h3>
         <p>Pastel esponjoso bañado en leches con cacao intenso.</p>
         <span class="precio">COP $40.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Tres Leches Chocolate', 40000, '/imagen/Adicionales/EMPACADO-CHOCOLATE.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Tres Leches Chocolate', 40000, '/imagen/Adicionales/EMPACADO-CHOCOLATE.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -53,7 +59,9 @@
         <h3>Tres Leches Tradicional</h3>
         <p>Clásica textura húmeda con sabor equilibrado y cremoso.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Tres Leches Tradicional', 25000,'/imagen/Adicionales/EMPACADO-TRADICIONAL.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Tres Leches Tradicional', 25000,'/imagen/Adicionales/EMPACADO-TRADICIONAL.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -62,7 +70,9 @@
         <h3>Tropical de frutas</h3>
         <p>Bizcocho suave con mezcla fresca de frutas naturales.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Tropical de Frutas', 25000,'/imagen/Adicionales/EMPACADO-TROPICAL-DEL-FRUTAS.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Tropical de Frutas', 25000,'/imagen/Adicionales/EMPACADO-TROPICAL-DEL-FRUTAS.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -71,20 +81,22 @@
         <h3>Napoleon</h3>
         <p>Hojaldre crujiente con crema suave y dulzor delicado.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Napoleon', 25000,'/imagen/Adicionales/Napoleon.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Napoleon', 25000,'/imagen/Adicionales/Napoleon.jpg')">Agregar al
           carrito</button>
       </div>
     </div>
     <a href="catalogo.html" class="btn-volver">Volver catalogo</a>
   </section>
-   <footer>
+  <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
   </footer>
 
-  <script src="carrito.js"></script>
+  <script src="/js/carrito.js"></script>
 </body>
 
 </html>
-    
+
 </body>
+
 </html>

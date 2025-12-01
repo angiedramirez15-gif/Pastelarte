@@ -5,35 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personalizar Pastel - PastelArte</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="personalizar.css">
+  <link rel="stylesheet" href="/ccs/style.css">
+  <link rel="stylesheet" href="/ccs/personalizar.css">
 </head>
 
 <body>
 
-  <!-- NAV -->
   <header class="header">
     <nav>
-      <div class="logo">🍰 PastelArte</div>
+      <div class="logo">PastelArte</div>
       <div class="links">
         <a href="index.html" class="activo">Inicio</a>
         <a href="catalogo.html">Catálogo</a>
-        <a href="pedido.html">Pedidos</a>
         <a href="personalizar.html">Personalizar</a>
         <a href="sobre.html">Sobre Nosotros</a>
         <a href="contacto.html">Contacto</a>
         <a href="admin.html">Administrador</a>
         <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
-        <a href="login.html" class="btn-login">Iniciar sesión</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html" class="btn-login">Acceder</a>
       </div>
     </nav>
   </header>
-
-  <!-- HERO PERSONALIZAR -->
+  
   <section class="hero personalizar-hero">
     <div class="hero-text">
       <h1>Diseña tu pastel <span>a tu estilo</span></h1>
-      <p>Elige sabor, tamaño, decoraciones y sube una imagen de referencia.  
+      <p>Elige sabor, tamaño, decoraciones y sube una imagen de referencia.
         Nosotros lo convertimos en realidad.</p>
     </div>
 
@@ -44,14 +42,14 @@
     <div class="hero-bg"></div>
   </section>
 
-  <!-- FORMULARIO -->
+  
   <section class="personalizar-section">
-    <h2 class="title">🎨 Personalización del pastel</h2>
+    <h2 class="title">🎨 Personaliza tu producto y realiza tu pedido</h2>
     <p class="sub">Completa los parámetros y visualiza un resumen de tu diseño.</p>
 
     <form id="formPersonalizar" class="form-box">
 
-      <!-- SABOR -->
+      
       <div class="grupo">
         <label>🍰 Sabor del pastel</label>
         <select id="sabor">
@@ -64,7 +62,7 @@
         </select>
       </div>
 
-      <!-- TAMAÑO -->
+      
       <div class="grupo">
         <label>📏 Tamaño</label>
         <select id="tamano">
@@ -74,7 +72,7 @@
         </select>
       </div>
 
-      <!-- DECORACIONES -->
+      
       <div class="grupo">
         <label>✨ Decoraciones</label>
         <div class="checks">
@@ -85,13 +83,13 @@
         </div>
       </div>
 
-      <!-- MENSAJE -->
+      
       <div class="grupo">
         <label>📝 Mensaje en el pastel</label>
         <input type="text" id="mensaje" placeholder="Ej: ¡Feliz Cumpleaños!">
       </div>
 
-      <!-- IMAGEN -->
+      
       <div class="grupo">
         <label>📸 Imagen de referencia</label>
         <input type="file" id="imagen" accept="image/*">
@@ -102,20 +100,26 @@
 
     </form>
 
-    <!-- RESULTADO -->
+    <h2 class="title">Explore los productos personalizados por nuestros clientes</h2>
+
+    <a href="clientes.html" class="btn-primary btn-full">Explorar</a>
+
+    
     <div id="resultado" class="resultado" style="display:none;"></div>
 
   </section>
 
-  <!-- FOOTER -->
+  
   <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
     <p>© 2025 PastelArte - Todos los derechos reservados</p>
   </footer>
-<script src="carrito.js"></script>
+  <script src="/js/carrito.js"></script>
 </body>
+
 </html>
 
 
 </body>
+
 </html>
