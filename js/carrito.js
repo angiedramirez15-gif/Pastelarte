@@ -13,19 +13,19 @@ document.addEventListener("DOMContentLoaded", () => {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
     if (carrito.length === 0) {
-  contenedor.innerHTML = '<p class="carrito-vacio">Tu carrito está vacío 😢</p>';
-}
- else {
+      contenedor.innerHTML = '<p class="carrito-vacio">Tu carrito está vacío 😢</p>';
+    }
+    else {
       let total = 0;
       contenedor.innerHTML = `
         <div class="lista-carrito">
           ${carrito.map(item => {
-  total += item.precio;
+        total += item.precio;
 
-  let extras = "";
+        let extras = "";
 
-  if (item.nombre === "Pastel Personalizado" && item.detalles) {
-    extras = `
+        if (item.nombre === "Pastel Personalizado" && item.detalles) {
+          extras = `
       <div class="extras">
         <p><strong>Sabor:</strong> ${item.detalles.sabor}</p>
         <p><strong>Tamaño:</strong> ${item.detalles.tamano}</p>
@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Mensaje:</strong> ${item.detalles.mensaje || "Sin mensaje"}</p>
       </div>
     `;
-  }
+        }
 
-  return `
+        return `
     <div class="item-carrito">
       <img src="${item.imagen}" alt="${item.nombre}">
       <div class="info">
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
     </div>
   `;
-}).join("")}
+      }).join("")}
 
         </div>
         <h3>Total: $${total.toLocaleString()}</h3>
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // PASTEL PERSONALIZADO → AL CARRITO
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
-  
+
   const form = document.getElementById("formPersonalizar");
 
   if (form) {

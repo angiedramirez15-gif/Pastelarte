@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -7,14 +6,11 @@
   padding: 0;
 }
 
-/* HERO CONTACTO */
-
-.title{
-    text-align: center;
-    margin-bottom: 5px;
+.title {
+  text-align: center;
+  margin-bottom: 5px;
 }
 
-/* FORMULARIO */
 .contacto-section {
   background: #ffffff;
   padding: 60px 40px;
@@ -28,7 +24,7 @@
   background: #fcefee;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contacto-form .grupo {
@@ -60,7 +56,6 @@
   padding: 15px;
 }
 
-/* CONFIRMACIÓN */
 .confirmacion {
   text-align: center;
   font-size: 1.2em;
@@ -68,7 +63,6 @@
   margin-top: 20px;
 }
 
-/* BLOQUES DE INFORMACIÓN */
 .info-extra {
   background: #fee9e7;
   padding: 60px 40px;
@@ -86,7 +80,7 @@
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .info-item h3 {

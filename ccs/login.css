@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     height: 100%;
     background-color: rgba(148, 33, 33, 0.472);
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -17,17 +17,17 @@ body{
     justify-content: center;
 }
 
-.container-lg{
+.container-lg {
     display: flex;
     width: 700px;
     height: auto;
-   
+
 }
 
-.login{
+.login {
     width: 400px;
     height: 500px;
-     background: radial-gradient(circle, #ffd9e6 10%, transparent 70%);
+    background: radial-gradient(circle, #ffd9e6 10%, transparent 70%);
     top: -150px;
     color: black;
     box-sizing: border-box;
@@ -49,7 +49,7 @@ body{
     }
 }*/
 
-.Jaider{
+.Jaider {
     position: absolute;
     top: 250px;
     left: 730px;
@@ -58,7 +58,7 @@ body{
     border-radius: 50%;
 }
 
-.login .title{
+.login .title {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -67,14 +67,14 @@ body{
     margin-top: 15px;
 }
 
-.login h2{
+.login h2 {
     margin: 0;
     padding: 0;
     font-weight: unset;
     display: block;
 }
 
-.login input{
+.login input {
     width: 100%;
     height: 50px;
     margin: 10px 0;
@@ -85,30 +85,30 @@ body{
     font-size: 16px;
 }
 
-.login button{
+.login button {
     width: 100%;
     height: 40px;
     margin: 10px 0;
     border: none;
     outline: none;
-    color:  black;
+    color: black;
     background-color: rgb(33, 182, 219);
     font-size: 16px;
     border-radius: 25px;
 }
 
-.login button a{
+.login button a {
     color: white;
     text-decoration: none;
 }
 
-.login .access:hover{
+.login .access:hover {
     background-color: rgb(33, 182, 219, 0.5);
     text-decoration: underline;
     cursor: pointer;
 }
 
-.login a{
+.login a {
     display: block;
     text-decoration: none;
     font-size: 16px;
@@ -116,11 +116,11 @@ body{
     margin: 5px 0 0 0;
 }
 
-.login a:hover{
+.login a:hover {
     color: black;
 }
 
-.login-nt{
+.login-nt {
     width: 400px;
     height: 500px;
     color: rgb(7, 7, 7);
@@ -145,7 +145,7 @@ body{
     }
 }*/
 
-.Dany{
+.Dany {
     position: absolute;
     top: 250px;
     left: 1090px;
@@ -154,7 +154,7 @@ body{
     border-radius: 50%;
 }
 
-.login-nt .title{
+.login-nt .title {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -163,7 +163,7 @@ body{
     margin-top: 15px;
 }
 
-.login-nt button{
+.login-nt button {
     width: 100%;
     margin: 20px 0;
     position: relative;
@@ -172,56 +172,56 @@ body{
     padding: 10px;
 }
 
-.login-nt button i{
+.login-nt button i {
     position: absolute;
     top: 10px;
     left: 20px;
 }
 
-.login-nt .mail{
+.login-nt .mail {
     background-color: #db4a39;
     color: white;
     font-size: 18px;
 }
 
-.login-nt .mail:hover{
+.login-nt .mail:hover {
     background-color: rgb(219, 74, 57, 0.8);
     cursor: pointer;
     text-decoration: underline;
 }
 
-.login-nt .fb{
+.login-nt .fb {
     background-color: #3b5999;
     color: white;
     font-size: 18px;
 }
 
-.login-nt .fb:hover{
+.login-nt .fb:hover {
     background-color: rgb(59, 89, 153, 0.8);
     cursor: pointer;
     text-decoration: underline;
 }
 
-.login-nt .tw{
+.login-nt .tw {
     background-color: #00acee;
     color: white;
     font-size: 18px;
 }
 
-.login-nt .tw:hover{
+.login-nt .tw:hover {
     background-color: rgb(0, 172, 238, 0.8);
     cursor: pointer;
     text-decoration: underline;
 }
 
-.login-nt .ig{
-    background-image: linear-gradient(to bottom right, #515BD4,#8134AF, #DD2A7B, #FEDA77, #F58529);
+.login-nt .ig {
+    background-image: linear-gradient(to bottom right, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
     font-size: 18px;
     color: white;
 }
 
-.login-nt .ig:hover{
-    background-image: linear-gradient(to bottom right, rgb(81,91,212, 0.8), rgb(129, 52, 175, 0.8), rgb(221, 42, 123, 0.8), rgb(254, 218, 199, 0.8), rgb(254, 133, 41,0.8));
+.login-nt .ig:hover {
+    background-image: linear-gradient(to bottom right, rgb(81, 91, 212, 0.8), rgb(129, 52, 175, 0.8), rgb(221, 42, 123, 0.8), rgb(254, 218, 199, 0.8), rgb(254, 133, 41, 0.8));
     cursor: pointer;
     text-decoration: underline;
 }
@@ -278,6 +278,13 @@ body{
 
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.9); }
-    to { opacity: 1; transform: scale(1); }
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

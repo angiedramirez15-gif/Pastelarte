@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PastelArte-pasteles</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="catalogo.css">
-    <link rel="stylesheet" href="carrito.css">
-   
-    
-</head>
-<body>
-<header>
-   
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PastelArte-pasteles</title>
+  <link rel="stylesheet" href="/ccs/style.css">
+  <link rel="stylesheet" href="/ccs/catalogo.css">
+  <link rel="stylesheet" href="/ccs/carrito.css">
+
+
+</head>
+
+<body>
+  <header class="header">
     <nav>
-      <div class="logo">🍰 PastelArte</div>
+      <div class="logo">PastelArte</div>
       <div class="links">
-        <a href="index.html">Inicio</a>      
-        <a href="catalogo.html" class="activo">Catálogo </a>
-        <a href="pedidos.html">Pedidos</a>
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizar.html">Personalizar</a>
+        <a href="sobre.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
         <a href="admin.html">Administrador</a>
         <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
-        <a href="login.html" class="btn-login">Iniciar sesión</a>
-
-        </div>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html" class="btn-login">Acceder</a>
+      </div>
     </nav>
- </header>
-    <section class="catalogo">
+  </header>
+  <section class="catalogo">
     <h1>Nuestros Cero Azucar</h1>
     <p>Elige tu favorito y haz tu pedido en línea 💕</p>
 
@@ -37,7 +39,9 @@
         <h3>Vainilla Chia</h3>
         <p>Pastel ligero de vainilla con chía que aporta textura sutil</p>
         <span class="precio">$45.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Vainilla Chia', 45000, '/imagen/CeroAzucar/Cero-Azucar-Vainilla-Con-Chia.jpg')">Agregar al carrito</button>
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Vainilla Chia', 45000, '/imagen/CeroAzucar/Cero-Azucar-Vainilla-Con-Chia.jpg')">Agregar
+          al carrito</button>
       </div>
 
       <div class="card">
@@ -45,7 +49,9 @@
         <h3>Vainilla con Chocolate</h3>
         <p>Bizcocho suave de vainilla con capa de cacao sin azúcar.</p>
         <span class="precio">$40.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Vainilla con Chocolate', 40000, '/imagen/CeroAzucar/Cero-Azucar-Vainilla-con-Chocolate.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Vainilla con Chocolate', 40000, '/imagen/CeroAzucar/Cero-Azucar-Vainilla-con-Chocolate.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -54,7 +60,9 @@
         <h3>Vainilla Coco</h3>
         <p>Esponjoso bizcocho de vainilla con toque tropical de coco.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Vainilla Coco', 25000,'/imagen/CeroAzucar/Cero-Azucar-Vainilla-con-Coco.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Vainilla Coco', 25000,'/imagen/CeroAzucar/Cero-Azucar-Vainilla-con-Coco.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -63,7 +71,8 @@
         <h3>Galletas Rizadas</h3>
         <p>Crujientes y ligeras, con dulzor natural sin azúcar.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Galletas Rizadas', 25000,'/imagen/CeroAzucar/CeroAzucar.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Galletas Rizadas', 25000,'/imagen/CeroAzucar/CeroAzucar.jpg')">Agregar al
           carrito</button>
       </div>
 
@@ -72,7 +81,8 @@
         <h3>Cocadas</h3>
         <p>Dulce coco rallado con textura tierna y aroma natural.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Cocadas', 25000,'/imagen/CeroAzucar/COCADA.jpg')">Agregar al
+        <button class="btn-carrito" onclick="agregarAlCarrito('Cocadas', 25000,'/imagen/CeroAzucar/COCADA.jpg')">Agregar
+          al
           carrito</button>
       </div>
 
@@ -81,23 +91,26 @@
         <h3>Panderos/Cubanos</h3>
         <p>Galletas suaves, aireadas y de sabor tradicional.</p>
         <span class="precio">$25.000</span>
-        <button class="btn-carrito" onclick="agregarAlCarrito('Panderos/Cubanos', 25000,'/imagen/CeroAzucar/PANDERO.jpg')">Agregar al
+        <button class="btn-carrito"
+          onclick="agregarAlCarrito('Panderos/Cubanos', 25000,'/imagen/CeroAzucar/PANDERO.jpg')">Agregar al
           carrito</button>
       </div>
 
     </div>
-       <a href="catalogo.html" class="btn-volver">Volver catalogo</a>
+    <a href="catalogo.html" class="btn-volver">Volver catalogo</a>
   </section>
-  
-    <script src="carrito.js"></script>
-    
-    
-    <footer>
+
+  <script src="/js/carrito.js"></script>
+
+
+  <footer>
     <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
     <p>© 2025 PastelArte - Todos los derechos reservados</p>
   </footer>
 
 </body>
+
 </html>
 </body>
+
 </html>

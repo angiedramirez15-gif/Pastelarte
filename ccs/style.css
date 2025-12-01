@@ -50,15 +50,16 @@ nav .links a {
   transition: 0.3s;
 }
 
-nav .links a, nav a{
+nav .links a,
+nav a {
   display: inline-block;
-  }
+}
 
 nav .links a:hover {
   color: #e75b8d;
 }
 
-.links a:hover{
+.links a:hover {
   transform: scale(1.1);
 }
 
@@ -69,7 +70,7 @@ nav .links a:hover {
   border-radius: 10px;
 }
 
-/* HERO */
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -128,12 +129,20 @@ nav .links a:hover {
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
-/* DESTACADOS */
+
 .destacados {
   text-align: center;
   padding: 70px 20px;
@@ -162,7 +171,7 @@ nav .links a:hover {
   padding: 20px;
   background: white;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   text-align: center;
 }
@@ -199,7 +208,7 @@ nav .links a:hover {
   color: white;
 }
 
-/* WHY */
+
 .why {
   background: #ffe6ef;
   padding: 70px 20px;
@@ -222,7 +231,7 @@ nav .links a:hover {
   padding: 25px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .why-item h3 {
@@ -230,7 +239,7 @@ nav .links a:hover {
   margin-bottom: 10px;
 }
 
-/* SOBRE NOSOTROS */
+
 .sobre {
   padding: 70px 20px;
 }
@@ -247,12 +256,10 @@ nav .links a:hover {
   margin-bottom: 20px;
 }
 
-/* FOOTER */
+
 footer {
   background: #c28195;
   color: white;
   padding: 20px;
   text-align: center;
 }
-
-

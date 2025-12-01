@@ -5,30 +5,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PastelArte - Confirmar Pago</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="pago.css">
+  <link rel="stylesheet" href="/ccs/style.css">
+  <link rel="stylesheet" href="/ccs/pago.css">
 </head>
 
 <body>
 
-<header>
-  <nav>
-    <div class="logo">🍰 PastelArte</div>
-    <div class="links">
-    <a href="index.html">Inicio</a>
-    <a href="catalogo.html">Catálogo</a>
-    <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
-    </div>
-  </nav>
-</header>
+  <header class="header">
+    <nav>
+      <div class="logo">PastelArte</div>
+      <div class="links">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="personalizar.html">Personalizar</a>
+        <a href="sobre.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="admin.html">Administrador</a>
+        <a href="carrito.html" class="ver-carrito">🛒 Carrito</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html" class="btn-login">Acceder</a>
+      </div>
+    </nav>
+  </header>
 
-<section class="pago-page">
+  <section class="pago-page">
 
   <h1>💳 Confirmar pago</h1>
 
+  <!-- FORMULARIO DE ENTREGA -->
+  <form class="formulario" id="formEntrega">
 
+    <b>📍 Dirección de entrega:</b>
 
-  <form class="formulario">
+    <label>Ciudad:</label>
+    <input type="text" id="ciudad" placeholder="Ej: Cali" required>
+
+    <label>Barrio:</label>
+    <input type="text" id="barrio" placeholder="Ej: San Fernando" required>
+
+    <label>Dirección exacta:</label>
+    <input type="text" id="direccion" placeholder="Ej: Cra 12 #34-56" required>
+
+    <label>Referencia (opcional):</label>
+    <input type="text" id="referencia" placeholder="Ej: Casa color beige con reja negra">
+
+    <label>Nombre de quien recibe:</label>
+    <input type="text" id="receptor" placeholder="Ej: María Pérez" required>
+
+    <label>Teléfono de contacto:</label>
+    <input type="text" id="telefonoEntrega" placeholder="Ej: 3100000000" required>
 
     <b>Método de pago:</b>
 
@@ -50,20 +75,23 @@
       <img width="20%" height="20%" src="imagen/nequi.png" alt="Pago con Nequi">
 
       <label>Número desde el que realizas el pago:</label>
-      <input type="text" placeholder="Ej: 3101234567">
+      <input type="text" id="numeroNequi" placeholder="Ej: 3101234567">
 
       <label>Adjunta comprobante (obligatorio si pagas por Nequi):</label>
       <input type="file" id="comprobante" accept="image/*">
     </div>
 
   </form>
+
   <div id="resumen-pago"></div>
+
   <button class="btn-pagar" onclick="pagar()">Pagar ahora</button>
+
 </section>
 
-<footer>
-  <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
-</footer>
+  <footer>
+    <p>📍 Cali, Colombia | ☎️ 312 000 0000 | 💌 contacto@pastelarte.com</p>
+  </footer>
 
 <script>
   function mostrarCampoNequi() {
@@ -83,12 +111,24 @@
   });
 
   function pagar() {
+   
+    const ciudad = document.getElementById("ciudad").value.trim();
+    const barrio = document.getElementById("barrio").value.trim();
+    const direccion = document.getElementById("direccion").value.trim();
+    const receptor = document.getElementById("receptor").value.trim();
+    const telefono = document.getElementById("telefonoEntrega").value.trim();
+
+    if (!ciudad || !barrio || !direccion || !receptor || !telefono) {
+      alert("Por favor completa todos los campos obligatorios de dirección.");
+      return;
+    }
+
+   
     const efectivo = document.getElementById("pagoEfectivo").checked;
     const nequi = document.getElementById("pagoNequi").checked;
 
-   
     if (!efectivo && !nequi) {
-      alert("Por favor selecciona un método de pago antes de continuar.");
+      alert("Por favor selecciona un método de pago.");
       return;
     }
 
@@ -96,17 +136,19 @@
     if (nequi) {
       const comprobante = document.getElementById("comprobante").files.length;
       if (comprobante === 0) {
-        alert("Debes subir el comprobante de pago para continuar.");
+        alert("Debes subir el comprobante de pago por Nequi.");
         return;
       }
     }
 
-    
-    alert("¡Pago realizado con éxito! 🎉 Gracias por tu compra.");
+    alert("🎉 ¡Pago realizado con éxito! Tu pedido está en camino.");
+
     localStorage.removeItem("carrito");
     window.location.href = "index.html";
   }
 </script>
 
+
 </body>
+
 </html>

@@ -1,18 +1,13 @@
-
-    .pago-page {
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #fcefee;
-    min-height: 70vh;
-    max-width: 700px;
-    margin: auto;
-    border-radius: 20px;
-    line-height: 2.0;
-    }
-
-
-
-
+.pago-page {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fcefee;
+  min-height: 70vh;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  line-height: 2.0;
+}
 
 .pago-page h1 {
   color: #6a2c3c;
